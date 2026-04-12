@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "image": "/images/story00.jpg",
+    "kicker": "THE STORY BEHIND",
+    "title": "OUR STORY"
+  },
+  "blocks": [
+    {
+      "type": "text",
+      "titleSmall": "ABOUT US",
+      "titleBig": "Vanilla is where comfort meets flavor.",
+      "text": "Vanilla is the first of its kind offering real Home Made cuisine, combining quality, comfort and flavour in a welcoming atmosphere.  Welcome to Vanilla Cafe and Restaurant."
+    },
+    {
+      "type": "image",
+      "src": "/images/story22.png",
+      "alt": "Vanilla story image"
+    },
+    {
+      "type": "text",
+      "titleSmall": "THE HISTORY",
+      "titleBig": "How Vanilla began",
+      "text": "The Vanilla Cafe was established to offer an excellent range of tasty, home cooked food prepared with care and passion Our speciality is food made the way it is prepared at home, focusing on fresh ingredients and authentic flavours Fresh, simple and absolutely delicious .Vanilla Cuisine provides exquisite food and a touch of charm for dinner parties, or a birthday celebration.Whatever the occasion, we guarantee an unforgettable meal!"
+    },
+    {
+      "type": "image",
+      "src": "/images/story33.png",
+      "alt": "Vanilla story image 2"
+    },
+    {
+      "type": "text",
+      "titleSmall": "OUR VIBE",
+      "titleBig": "Happy vibes, every day.",
+      "text": "From our space design to our menu, we focus on making every visit feel special."
+    },
+    {
+      "type": "image",
+      "src": "/images/story44.png",
+      "alt": "Vanilla story image 3"
+    }
+  ],
+  "customerPhotosTitle": "CUSTOMERS' PHOTOS",
+  "customerPhotos": [
+    { "id": 1, "src": "/images/11.jpg", "alt": "Customer photo 1" },
+    { "id": 2, "src": "/images/22.jpg", "alt": "Customer photo 2" },
+    { "id": 3, "src": "/images/33.jpg", "alt": "Customer photo 3" },
+    { "id": 4, "src": "/images/44.jpg", "alt": "Customer photo 4" },
+    { "id": 5, "src": "/images/55.jpg", "alt": "Customer photo 5" },
+    { "id": 6, "src": "/images/66.jpg", "alt": "Customer photo 6" }
+  ]
+}

@@ -1,3 +1,4 @@
+// Dessert data: contains sweets items
 export const dessertData = {
   "5bd4f6eb-0339-4567-8319-76b5292c0e08": {
     title: "Dessert",

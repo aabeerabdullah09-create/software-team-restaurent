@@ -9,6 +9,7 @@ const DrinkCard = ({ item }) => {
                 />
             </div>
 
+            
             <h3 className="font-semibold text-xl text-black text-center mt-4">
                 {item.name}
             </h3>

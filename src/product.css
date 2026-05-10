@@ -1,0 +1,310 @@
+.restaurant-app {
+  font-family: "Segoe UI", Arial;
+  background: #fffaf5;
+  min-height: 100vh;
+  padding: 20px;
+  
+}
+/* ===== Banner ===== */
+
+.banner {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("/images/banner.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  padding: 70px 20px;
+  margin-bottom: 40px;
+
+  text-align: center;
+  border-radius: 20px;
+}
+
+.banner h1 {
+  font-size: 50px;
+  margin: 0;
+  color: white;
+
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.banner p {
+  margin-top: 15px;
+  color: #f5f5f5;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* ===== Title ===== */
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+
+  color: #d35400;
+
+  text-shadow: 1px 1px 8px rgba(211, 84, 0, 0.2);
+}
+
+/* ===== Products ===== */
+
+.products {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 40px;
+}
+
+.product-card {
+  background: white;
+
+  border-radius: 18px;
+  overflow: hidden;
+
+  width: 250px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  width: 100%;
+  height: 200px;
+
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 18px;
+  text-align: center;
+}
+
+.product-info h3 {
+  color: #2c2c2c;
+  margin-bottom: 8px;
+}
+
+.category {
+  display: inline-block;
+
+  background-color: #ffe0b2;
+  color: #d35400;
+
+  padding: 5px 12px;
+  border-radius: 20px;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  margin-bottom: 12px;
+}
+
+.price {
+  color: #e74c3c;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  margin-bottom: 15px;
+}
+
+/* ===== Buttons ===== */
+
+.add-btn,
+.checkout-btn,
+.cart-controls button {
+  background: linear-gradient(
+    135deg,
+    #ff9800,
+    #f57c00
+  );
+
+  color: white;
+
+  border: none;
+  border-radius: 25px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.add-btn:hover,
+.checkout-btn:hover,
+.cart-controls button:hover {
+  transform: translateY(-2px);
+
+  background: linear-gradient(
+    135deg,
+    #f57c00,
+    #ff9800
+  );
+}
+
+/* ===== Cart ===== */
+
+.cart-section {
+  background: #fff3e0;
+
+  border-radius: 20px;
+  padding: 25px;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+  margin-top: 30px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: white;
+
+  padding: 15px;
+  border-radius: 15px;
+
+  margin-bottom: 15px;
+
+  transition: 0.3s;
+}
+
+.cart-item:hover {
+  background: #fff8f0;
+}
+
+.cart-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cart-img {
+  width: 75px;
+  height: 75px;
+
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.cart-left h4 {
+  margin: 0;
+  color: #333;
+}
+
+.cart-left p {
+  margin-top: 5px;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* ===== Cart Controls ===== */
+
+.cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-controls button {
+  width: 35px;
+  height: 35px;
+
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cart-controls span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.remove-btn {
+  background: linear-gradient(
+    135deg,
+    #e53935,
+    #c62828
+  ) !important;
+}
+
+.remove-btn:hover {
+  background: linear-gradient(
+    135deg,
+    #c62828,
+    #e53935
+  ) !important;
+}
+
+/* ===== Total ===== */
+
+.total {
+  text-align: right;
+
+  margin-top: 20px;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  color: #d35400;
+}
+
+/* ===== Checkout ===== */
+
+.checkout-btn {
+  width: 100%;
+
+  margin-top: 20px;
+  padding: 15px;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 35px;
+  }
+
+  .products {
+    gap: 18px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .cart-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .total {
+    text-align: center;
+  }
+}

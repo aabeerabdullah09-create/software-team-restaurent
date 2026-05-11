@@ -45,7 +45,7 @@ const TopTabs = () => {
 
             {/* NEW ORDER TAB */}
             <NavLink
-                to="/order"
+                to="/order/12345678-90ab-cdef-1234-567890abcdef"
                 className={({ isActive }) => navClass(isActive)}
             >
                 Order

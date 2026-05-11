@@ -28,7 +28,7 @@ function App() {
           <Route path="/Foodpage/:id" element={<Foodpage/>} />
           <Route path="/VanillaStoryPage" element={<VanillaStoryPage/>} />
           <Route path="/Dessertpage/:id" element={<Dessertpage />} />
-         <Route path="/Order" element={<Order />} />
+         <Route path="/Order/:id" element={<Order />} />
 
       </Routes>
           <ThemeProvider theme={darkTheme}>

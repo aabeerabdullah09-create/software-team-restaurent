@@ -15,25 +15,46 @@ const TopTabs = () => {
 
     return (
         <div className="flex justify-center gap-6 py-4">
-            <NavLink to="/Mainpage"
-          className={({ isActive }) => navClass(isActive)}>
+            <NavLink
+                to="/Mainpage"
+                className={({ isActive }) => navClass(isActive)}
+            >
                 Home
             </NavLink>
-            <NavLink to="/Foodpage/333cc771-8218-4d47-b72e-3a6aa2bfb51e"
-            className={({ isActive }) => navClass(isActive)}>
+
+            <NavLink
+                to="/Foodpage/333cc771-8218-4d47-b72e-3a6aa2bfb51e"
+                className={({ isActive }) => navClass(isActive)}
+            >
                 Food
             </NavLink>
-            <NavLink to="/Drinkspage/6513012c-768a-41fc-83f0-d0095c8f14bb"
-             className={({ isActive }) => navClass(isActive)}>
+
+            <NavLink
+                to="/Drinkspage/6513012c-768a-41fc-83f0-d0095c8f14bb"
+                className={({ isActive }) => navClass(isActive)}
+            >
                 Drinks
             </NavLink>
-            <NavLink to="/Dessertpage/5bd4f6eb-0339-4567-8319-76b5292c0e08"
-             className={({ isActive }) => navClass(isActive)}>
+
+            <NavLink
+                to="/Dessertpage/5bd4f6eb-0339-4567-8319-76b5292c0e08"
+                className={({ isActive }) => navClass(isActive)}
+            >
                 Dessert
             </NavLink>
-           
-            <NavLink to="/VanillaStoryPage"
-            className={({ isActive }) => navClass(isActive)}>
+
+            {/* NEW ORDER TAB */}
+            <NavLink
+                to="/order/12345678-90ab-cdef-1234-567890abcdef"
+                className={({ isActive }) => navClass(isActive)}
+            >
+                Order
+            </NavLink>
+
+            <NavLink
+                to="/VanillaStoryPage"
+                className={({ isActive }) => navClass(isActive)}
+            >
                 Our Story
             </NavLink>
         </div>

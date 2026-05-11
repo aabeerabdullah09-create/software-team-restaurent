@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const TopTabs = () => {
+const TopTabs = ( cartCount = 0 ) => {
     const scrollToMenu = () => {
         const section = document.getElementById("menu-section");
         if (section) {
@@ -50,7 +50,9 @@ const TopTabs = () => {
             >
                 Order
             </NavLink>
-
+<NavLink to="/cart" className={({ isActive }) => navClass(isActive)}>
+  🛒 Cart {cartCount > 0 && `(${cartCount})`}
+</NavLink>
             <NavLink
                 to="/VanillaStoryPage"
                 className={({ isActive }) => navClass(isActive)}

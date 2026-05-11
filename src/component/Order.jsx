@@ -4,8 +4,14 @@ import "../product.css";
 import { foodData } from "../Data/fooddata";
 import { drinkData } from "../Data/drinkdata";
 import { dessertData } from "../Data/dessertdata";
+import { useParams } from "react-router-dom";
+import Header from "./Header.jsx";
+import TopTabs from "./TopTabls.jsx";
+import Logoo from "./Logo.jsx";
 
 function Order() {
+  const { id } = useParams();
+  console.log("Order ID:", id);
   const [cart, setCart] = useState([]);
 
   const products = [
@@ -85,6 +91,15 @@ function Order() {
   }, 0);
 
   return (
+    <>                                             
+    <Header/>                                     
+    <div className="relative mt-10 md:mt-4 z-20"> 
+      <TopTabs/>                                  
+    </div>                                       
+    <div className="absolute top-20 left-4 z-30">
+      <Logoo/>                                 
+    </div>  
+
     <div className="restaurant-app">
       <div className="banner">
         <h1>🍴 Order Menu</h1>
@@ -187,6 +202,7 @@ function Order() {
         )}
       </div>
     </div>
+     </>
   );
 }
 
